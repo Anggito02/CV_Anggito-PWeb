@@ -1,0 +1,708 @@
+/* IMPORTS */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@700;800&family=Qwitcher+Grypen&family=Source+Serif+Pro:wght@400&display=swap');
+/* ============================ */
+
+/* Utilities */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================ */
+
+/* Header Layout */
+#header {
+    padding-left: 4%;
+    padding-right: 4%;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+.header-left {
+    height: 100%;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header-left >
+h1 {
+    color: 202D56;
+    
+    font-family: 'Qwitcher Grypen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 106px;
+}
+
+.header-left >
+h2 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 81px;
+
+    
+    background: radial-gradient(100% 1251.06% at 0% 0%, #202D56 0%, #7FBCD2 56.38%, #FFEEAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-right {
+    height: 100%;
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right >
+a {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right >
+a >
+button {
+    width: 75%;
+    height: 56px;
+
+    color: white;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 46px;
+
+    border-radius: 35px;
+    background: linear-gradient(90deg, #202D56 0%, #7FBCD2 50.52%, #FFEEAF 100%);
+    box-shadow: 0px 0px 22px #7FBCD2;
+    transition: ease-out 0.4s;
+}
+
+.header-right >
+a >
+button:hover {
+    width: 90%;
+    letter-spacing: .08em;
+}
+
+.header-right >
+a >
+button:active {
+    width: 85%;
+    letter-spacing: .02em;
+}
+
+/* ============================ */
+
+/* Header Background */
+
+.header-background {
+    position: absolute;
+    top: 24px;
+    left: 695px;
+    z-index: -1;
+
+    width: 685px;
+    height: 749px;
+}
+
+.header-background >
+.blue-circle {
+    position: absolute;
+    top: 64px;
+
+    width: 415px;
+    height: 415px;
+
+    border-radius: 50%;
+    background: #7FBCD2;
+}
+
+.header-background >
+.orange-circle {
+    position: absolute;
+    top: 315px;
+    left: 235px;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+    background: #FFEEAF;
+}
+
+.html-logo,
+.css-logo,
+.js-logo {
+    z-index: 1;
+}
+
+.html-logo {
+    position: absolute;
+    top: 0px;
+    left: 532px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(-5.98deg);
+}
+
+.css-logo {
+    position: absolute;
+    top: 12px;
+    left: 130px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(12.03deg);
+}
+
+.js-logo {
+    position: absolute;
+    top: 295px;
+    left: 575px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(6.23deg);
+}
+
+/* ============================ */
+
+/* About Layout */
+
+#about {
+    padding-left: 4%;
+    padding-right: 4%;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+
+.about-right {
+    width: 50%;
+}
+
+.about-right >
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 72px;
+
+    letter-spacing: .1em;
+
+    background: radial-gradient(100% 1251.06% at 0% 0%, #202D56 0%, #7FBCD2 56.38%, #FFEEAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-right >
+h3 {
+    color: #202D56;
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+}
+
+/* ============================ */
+
+/* About Background */
+
+.about-background {
+    z-index: -1;
+}
+
+.about-background >
+.orange-circle {
+    position: absolute;
+    top: 690px;
+    left: 64px;
+
+    width: 495px;
+    height: 495px;
+
+    border-radius: 50%;
+    background: #FFEEAF;
+}
+
+.about-background >
+.green-circle {
+    position: absolute;
+    top: 1280px;
+    left: 1000px;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    background: #7FBCD2;
+}
+
+/* ============================ */
+
+/* Education Layout */
+#education {
+    padding-left: 4%;
+    padding-right: 4%;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+
+#education >
+h1 {
+    width: 100%;
+    height: 20%;
+    padding: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+
+    background: radial-gradient(100% 100% at 0% 0%, #202D56 0%, #7FBCD2 56.38%, #FFEEAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ed-content-wrapper {
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+
+    color: #202D56;
+    border: 1px solid red;
+}
+
+.ed-content-1 {
+    position: absolute;
+    top: 1580px;
+    left: 280px;
+}
+
+.ed-content-1:after {
+    display: none;
+    content: "This is my elementary school and i learned a lot of things here from 2007 to 2014";
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    width: 80%;
+    height: 100%;
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+}
+
+.ed-content-1:hover:after {
+    display: block;
+}
+
+.ed-content-2 {
+    position: absolute;
+    top: 1760px;
+    left: 640px;
+}
+
+.ed-content-2::after {
+    display: none;
+    content: "This is my middle school. I really have a really fun times during this times from 2014 to 2017";
+    position: absolute;
+    top: 0px;
+    left: -250px;
+
+    width: 75%;
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+}
+
+.ed-content-2:hover::after {
+    display: block;
+}
+
+.ed-content-3 {
+    position: absolute;
+    top: 1990px;
+    left: 580px;
+}
+
+.ed-content-3::after {
+    display: none;
+    content: "This is where i really interested in technological developments. I learn here from 2017 to 2020";
+    position: absolute;
+    top: -180px;
+    left: 150px;
+
+    width: 75%;
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+}
+
+.ed-content-3:hover::after {
+    display: block;
+}
+
+.ed-content-4 {
+    position: absolute;
+    top: 1915px;
+    left: 925px;
+}
+
+.ed-content-4::after {
+    display: none;
+    content: "This is where i started to learn coding and stuff. I really liked the environment in ITS. I hope I could graduated from college in 2024";
+    position: absolute;
+    top: 120px;
+
+    width: 100%;
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+}
+
+.ed-content-4:hover::after {
+    display: block;
+}
+
+/* ============================ */
+
+/* Education Background */
+#ed-svg-circle {
+    position: absolute;
+    top: 1690px;
+    left: -350px;
+    z-index: -1;
+
+    width: 50%;
+}
+
+#ed-svg-line {
+    position: absolute;
+    top: 1380px;
+    left: 250px;
+    z-index: -1;
+
+    width: 70%;
+}
+
+.ed-circle {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background: radial-gradient(#7FBCD2, #202D56);
+}
+
+.ed-circle-1 {
+    position: absolute;
+    top: 1622px;
+    left: 420px;
+}
+
+.ed-circle-2 {
+    position: absolute;
+    top: 1780px;
+    left: 600px;
+}
+
+.ed-circle-3 {
+    position: absolute;
+    top: 1945px;
+    left: 760px;
+}
+
+.ed-circle-4 {
+    position: absolute;
+    top: 1998px;
+    left: 1000px;
+}
+
+/* ============================ */
+
+/* Experience Layout */
+
+#experience {
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+
+#experience > h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+
+    background: radial-gradient(100% 100% at 0% 0%, #202D56 0%, #7FBCD2 56.38%, #FFEEAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.exp-full-content-wrapper {
+    padding-top: 2%;
+
+    height: 90%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.exp-content >
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: .1em;
+}
+
+.exp-wrapper-divider {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.exp-content {
+    width: 100%;
+    height: 100%;
+
+    color: #202D56;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #202D56;
+    transition: all .5s;
+}
+
+.exp-content-1::after {
+    display: none;
+    content: "I learned a lot about logistics and Standart Operating Procedure in ITS";
+    padding: 5% 15%;
+}
+
+.exp-content-2::after {
+    display: none;
+    content: "I learned a lot about how the real-life industry works and how to implement my skill in the Startup industry";
+    padding: 5% 15%;
+}
+
+.exp-content-3::after {
+    display: none;
+    content: "I am learning a lot about how to manage a team and how to manage a project. I also learn a lot about people characteristics and how to manage them";
+    padding: 5% 15%;
+}
+
+.exp-content-4::after {
+    display: none;
+    content: "I am thankful for this opportunity for becoming Bank Indonesia Scholarship's Awardee.";
+    padding: 5% 15%;
+}
+
+.exp-content-5::after {
+    display: none;
+    content: "This is one of my way to give back to Bank Indonesia for trusting me to become the Scholarship's Awardee";
+    padding: 5% 15%;
+}
+
+.exp-content-6::after {
+    display: none;
+    content: "I am also thankful for ITS because trusting me to become the Scholarship's Awardee. So this is one of my way to give back to ITS";
+    padding: 5% 15%;
+}
+
+.exp-content:hover {
+    background: linear-gradient(0deg, #FFEEAF 0%, #7FBCD2 40.38%);
+    color: #f0f8ff;
+}
+
+.exp-content:hover::after {
+    display: block;
+}
+
+/* ============================ */
+
+/* Experience Background */
+
+#exp-background {
+    position: absolute;
+    left: 0%;
+
+    z-index: -2;
+}
+/* ============================ */
+
+/* Skill Layout */
+#skill {
+    padding: 4% 2%;
+
+    height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid red;    
+}
+
+#skill >
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+
+    background: radial-gradient(100% 100% at 0% 0%, #202D56 35%, #7FBCD2 60.38%, #FFEEAF 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skill-full-wrapper {
+    padding-top: 2%;
+
+    height: 90%;
+    width: 90%;
+
+    color: #202D56;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill-content-wrapper {
+    padding: 0% 10%;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-content-wrapper > * {
+    border: 2px solid #202D56;
+}
+
+.skill-content-wrapper >
+.skill-title {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 32px;
+    letter-spacing: .1em;
+
+    color: #f0f8ff;
+    background:linear-gradient(0deg, #7FBCD2 0%, #202D56 50.38%);
+}
+
+.skill-content-wrapper >
+.skill-items-wrapper {
+    padding: 0 2%;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* ============================ */
+
+/* Skill Background */
+/* ============================ */
