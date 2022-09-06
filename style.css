@@ -55,7 +55,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid blue;
 }
 
 .header-left {
@@ -230,7 +229,6 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid red;
 }
 
 .about-right {
@@ -305,7 +303,6 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border: 1px solid red;
 }
 
 #education >
@@ -333,7 +330,6 @@ h1 {
     font-size: 24px;
 
     color: #202D56;
-    border: 1px solid red;
 }
 
 .ed-content-1 {
@@ -496,7 +492,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid red;
 }
 
 #experience > h1 {
@@ -624,7 +619,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid red;    
 }
 
 #skill >
